@@ -8,9 +8,7 @@ export interface settingsRedux {
   entities: settingsItem[];
 }
 
-/* eslint-disable */
-export enum SettingOptions {
-  devMode,
-  darkMode,
-}
-/* eslint-disable */
+export const SettingOptions = {
+  devMode: 0,
+  darkMode: 1,
+};

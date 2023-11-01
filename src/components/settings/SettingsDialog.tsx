@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 
 import { NavItem } from "../../models/nav";
 import { SettingOptions } from "../../models/settings";
+import { useLanguage } from "../../provider/LanguageProvider";
 import { store, useAppDispatch } from "../../store";
 import { changeSettings, settingsSelectors } from "../../store/settings/slice";
 import { fluentStyles } from "../../styles/fluent";
@@ -27,6 +28,7 @@ export function SettingsDialog(props: { width: number; item: NavItem }) {
   const fluentStyle = fluentStyles();
   const { t, i18n } = useTranslation();
   const dispatch = useAppDispatch();
+  const { setLanguage } = useLanguage();
 
   const [isDarkMode, setIsDarkMode] = useState(
     settingsSelectors.selectById(
@@ -70,8 +72,9 @@ export function SettingsDialog(props: { width: number; item: NavItem }) {
   const handleLangChange = useCallback(
     (_: FormEvent<HTMLDivElement>, data: { value: string | undefined }) => {
       i18n.changeLanguage(data.value);
+      setLanguage(data.value);
     },
-    []
+    [i18n, setLanguage]
   );
 
   return (
