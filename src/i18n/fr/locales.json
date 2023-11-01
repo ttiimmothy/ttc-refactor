@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "label": {
+      "home": "Accueil",
+      "lines": "Lignes",
+      "about": "À propos",
+      "lang": "Langue",
+      "settings": "Paramètres"
+    }
+  },
+  "home": {
+    "title": {
+      "name": "TTC Refractor",
+      "tooltip": "Retourner à l'accueil"
+    },
+    "etaReminder": "Pour voir vos arrêts fréquemment visités, cliquez sur les icônes de signets lorsque vous êtes sur leurs pages. Vos arrêts sauvegardés apparaîtront ici pour un accès facile.",
+    "noEtaAvailable": "Oops, désolé, aucune donnée d'heure d'arrivée estimée (ETA) n'est disponible pour le moment. Veuillez vérifier à nouveau plus tard."
+  },
+  "lines": {
+    "ariaLabel": "entrer un numéro de ligne",
+    "placeholder": "entrer un numéro de ligne",
+    "browserTitle": "Ligne {{lineNum}} | TTC Suivant",
+    "title": "Entrez un numéro de ligne :",
+    "number": "Ligne {{lineNum}}",
+    "lineAndStopInfo": "Ligne {{lineNum}} Arrêt {{stopNum}} ="
+  },
+  "stops": {
+    "browserTitle": "Identifiant d'arrêt {{stopId}} | TTC Suivant"
+  },
+  "buttons": {
+    "search": "Rechercher",
+    "mapPin": "Afficher l'emplacement sur Google Maps",
+    "busIcon": "Afficher l'heure d'arrivée du bus",
+    "languageChange": "Sélection de la langue",
+    "appearance": "Apparence",
+    "darkMode": "Mode sombre"
+  },
+  "error": {
+    "notFound": "Not Found 404"
+  },
+  "debug": {
+    "showResponse": "Voir la réponse brute"
+  },
+  "eta": {
+    "minuteShort": "m",
+    "secondShort": "s"
+  },
+  "badge": {
+    "arriving": "Arrivée"
+  },
+  "lang": {
+    "en": "English",
+    "fr": "Français (par ChatGpt)",
+    "zh": "中文"
+  }
+}

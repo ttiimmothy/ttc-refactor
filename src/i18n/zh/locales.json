@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "label": {
+      "home": "主頁",
+      "lines": "路線",
+      "about": "關於",
+      "lang": "語言",
+      "settings": "設定"
+    }
+  },
+  "home": {
+    "title": {
+      "name": "TTC 有無車",
+      "tooltip": "回主頁"
+    },
+    "etaReminder": "溫提： 請善用bookmark功能，咁就唔洗成日左搵右搵啦",
+    "noEtaAvailable": "已經無下一班車既資料了 飲杯咖啡再check吓"
+  },
+  "lines": {
+    "ariaLabel": "輸入路線",
+    "placeholder": "輸入路線",
+    "browserTitle": "{{lineNum}} 線 | TTC 有無車",
+    "title": "輸入路線:",
+    "number": "{{lineNum}} 號線",
+    "lineAndStopInfo": "{{lineNum}} 線 #{{stopNum}} 站 ="
+  },
+  "stops": {
+    "browserTitle": "{{stopId}} 站 | TTC 有無車"
+  },
+  "buttons": {
+    "search": "搜尋",
+    "mapPin": "響 Google 地圖睇佢個位置",
+    "busIcon": "睇巴士幾時到站",
+    "languageChange": "選擇語言",
+    "appearance": "外觀",
+    "darkMode": "黑夜模式"
+  },
+  "error": {
+    "notFound": "Not Found 404: 找不到這一頁"
+  },
+  "debug": {
+    "showResponse": "原始資料"
+  },
+  "eta": {
+    "minuteShort": "分",
+    "secondShort": "秒"
+  },
+  "badge": {
+    "arriving": "Arriving"
+  },
+  "lang": {
+    "en": "English",
+    "fr": "Français (par ChatGpt)",
+    "zh": "中文"
+  }
+}
