@@ -16,7 +16,6 @@ export const loadFavouriteEtasState = () => {
 export const saveFavouriteEtasState = (state: FavouriteEtaRedux) => {
   try {
     const serialState = JSON.stringify(state);
-    // localStorage.removeItem("favouriteEtas");
     localStorage.setItem("favouriteEtas", serialState);
     localStorage.setItem("version", "1");
   } catch (err) {

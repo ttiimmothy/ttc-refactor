@@ -19,7 +19,6 @@ export const favouriteEtasSlice = createSlice({
   reducers: {
     addFavouriteadEta: favouriteEtasAdapter.addOne,
     removeFavouriteadEta: favouriteEtasAdapter.removeOne,
-
     getFavouriteadEta: favouriteEtasAdapter.selectId,
   },
 });

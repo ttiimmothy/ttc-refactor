@@ -5,8 +5,6 @@ export interface FavouriteEta {
   stopId?: string;
 }
 
-// routeTag = `53`A `53`B
-// branchTag = 53`A` 53`B`
 export interface BranchEta extends FavouriteEta {
   branchTag: string;
   stopTitle: string;
