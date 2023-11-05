@@ -25,7 +25,7 @@ Run the app locally
 
 ```
 npm install
-npm run start
+npm run dev
 ```
 
 ## Usage
