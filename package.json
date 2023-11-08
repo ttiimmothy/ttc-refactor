@@ -1,8 +1,8 @@
 {
-  "name": "ttc_refractor",
+  "name": "ttc_refactor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ttiimmothy.github.io/ttc-refractor",
+  "homepage": "https://ttiimmothy.github.io/ttc-refactor",
   "dependencies": {
     "@fluentui/react-components": "^9.9.1",
     "@fluentui/react-icons": "^2.0.191",
