@@ -1,9 +1,9 @@
-# TTC Refractor
-[![ci](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/ci.yml)
-[![cd](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/cd.yml)
-[![pages-build-deployment](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/ttc-refractor/actions/workflows/pages/pages-build-deployment)
+# TTC Refactor
+[![ci](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/ci.yml)
+[![cd](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/cd.yml/badge.svg)](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/cd.yml)
+[![pages-build-deployment](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/ttc-refactor/actions/workflows/pages/pages-build-deployment)
 
-TTC Refractor is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars. With TTC Refractor, users can quickly and easily plan their commute and stay up-to-date with the latest arrival times. [Demo](https://ttiimmothy.github.io/ttc-refractor/)
+TTC Refactor is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars. With TTC Refactor, users can quickly and easily plan their commute and stay up-to-date with the latest arrival times. [Demo](https://ttiimmothy.github.io/ttc-refactor/)
 
 ## Features
 
@@ -39,7 +39,7 @@ That's it! With just a few simple steps, you can quickly and easily find out whe
 
 ## Contributing
 
-We welcome contributions from other developers! To contribute to TTC Refractor, please follow these steps:
+We welcome contributions from other developers! To contribute to TTC Refactor, please follow these steps:
 
 - Fork the repository.
 - Create a new branch for your changes.
@@ -48,11 +48,11 @@ We welcome contributions from other developers! To contribute to TTC Refractor, 
 
 ## License
 
-TTC Refractor is licensed under the MIT License.
+TTC Refactor is licensed under [GNU General Public License v3.0](LICENSE).
 
 ## References
 
-TTC Refractor is built using data from [TTC Real-Time Next Vehicle Arrival (NVAS)](https://open.toronto.ca/dataset/ttc-real-time-next-vehicle-arrival-nvas/).
+TTC Refactor is built using data from [TTC Real-Time Next Vehicle Arrival (NVAS)](https://open.toronto.ca/dataset/ttc-real-time-next-vehicle-arrival-nvas/).
 
 ## Inspiration
 
