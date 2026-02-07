@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ttc-refactor/static/css/main.29c80bc1.css",
-    "main.js": "/ttc-refactor/static/js/main.54eb4862.js",
+    "main.js": "/ttc-refactor/static/js/main.ed1ca96e.js",
     "static/js/496.2a21b2c4.chunk.js": "/ttc-refactor/static/js/496.2a21b2c4.chunk.js",
     "service-worker.js": "/ttc-refactor/service-worker.js",
     "index.html": "/ttc-refactor/index.html",
     "main.29c80bc1.css.map": "/ttc-refactor/static/css/main.29c80bc1.css.map",
-    "main.54eb4862.js.map": "/ttc-refactor/static/js/main.54eb4862.js.map",
+    "main.ed1ca96e.js.map": "/ttc-refactor/static/js/main.ed1ca96e.js.map",
     "496.2a21b2c4.chunk.js.map": "/ttc-refactor/static/js/496.2a21b2c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29c80bc1.css",
-    "static/js/main.54eb4862.js"
+    "static/js/main.ed1ca96e.js"
   ]
 }
