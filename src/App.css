@@ -241,20 +241,26 @@ pre {
 
 .sideNavOpen {
   min-width: 15em;
+  padding-right: 16px;
+}
+
+.sideNavClose {
+  padding-right: 0.5em;
 }
 
 .sideNavHover {
   padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
   cursor: pointer;
+  width: fit-content;
+  border-radius: 2em;
 }
-
+.sideNavHover:hover {
+  background-color: var(--colorNeutralBackground6);
+  padding-top: 1em;
+}
 @media screen and (min-width: 800px) {
-  .stopPredictionPage,
-  .linePage,
-  .homePage {
-    width: 100%;
-  }
-
   .container {
     flex-direction: row;
   }
@@ -266,8 +272,7 @@ pre {
   }
 
   .sideNav {
-    padding-bottom: 16px;
-    padding-right: 16px;
+    padding-bottom: 10px;
     background-color: var(--colorNeutralBackground3);
     display: flex;
     flex-direction: column;
