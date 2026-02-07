@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  height: 100vh;
 }
 
 .bottomNav {
@@ -64,9 +65,17 @@ body {
 }
 
 .navBar {
-  padding: 16px 16px 0 0;
   display: flex;
   flex-direction: column;
+}
+
+/* Make the main content take remaining space and scroll independently */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: auto;
+  min-height: 0;
 }
 
 .navBar > a {
@@ -230,6 +239,15 @@ pre {
   width: 32px;
 }
 
+.sideNavOpen {
+  min-width: 15em;
+}
+
+.sideNavHover {
+  padding-left: 1em;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 800px) {
   .stopPredictionPage,
   .linePage,
@@ -248,12 +266,23 @@ pre {
   }
 
   .sideNav {
+    padding-bottom: 16px;
+    padding-right: 16px;
     background-color: var(--colorNeutralBackground3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
-  .sideNav button {
+  .sideNavOpen button {
     padding-left: 32px;
     justify-content: left;
+  }
+
+  .sideNavClose button {
+    padding-left: 20px;
+    max-width: 100%;
   }
 
   .etaCardCountdown {

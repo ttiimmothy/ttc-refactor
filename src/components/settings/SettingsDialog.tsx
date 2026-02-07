@@ -24,7 +24,7 @@ import { store, useAppDispatch } from "../../store";
 import { changeSettings, settingsSelectors } from "../../store/settings/slice";
 import { fluentStyles } from "../../styles/fluent";
 
-export function SettingsDialog(props: { width: number; item: NavItem }) {
+export function SettingsDialog(props: { width: number; item: NavItem; sideNavOpen: boolean}) {
   const fluentStyle = fluentStyles();
   const { t, i18n } = useTranslation();
   const dispatch = useAppDispatch();
@@ -61,7 +61,7 @@ export function SettingsDialog(props: { width: number; item: NavItem }) {
       case isLargerThanDefaultPhone():
         return fluentStyle.bottomNavButton;
       default:
-        return fluentStyle.smallRoundNavButton;
+        return fluentStyle.sideNavButton;
     }
   }, [props.width]);
 
@@ -89,7 +89,10 @@ export function SettingsDialog(props: { width: number; item: NavItem }) {
             size={isLargerThanDefaultPhone() ? "medium" : "large"}
             title={t(props.item.label) ?? ""}
           >
-            {isLargerThanDefaultPhone() && <Text>{t(props.item.label)}</Text>}
+            {/* {isLargerThanDefaultPhone() && <Text>{t(props.item.label)}</Text>} */}
+            {isLargerThanDefaultPhone() && (props.width < 800 || props.sideNavOpen) && (
+              <Text>{t(props.item.label)}</Text>
+            )}
           </Button>
         </DialogTrigger>
         <DialogSurface className={getDialogClassName()}>

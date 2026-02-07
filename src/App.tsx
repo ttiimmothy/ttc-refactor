@@ -25,7 +25,7 @@ function App() {
       <I18nextProvider i18n={i18n}>
         <div className="container">
           <header className="navBar">
-            <Link
+            {/* <Link
               className="appTitle"
               to={"/"}
               title={t("home.title.tooltip") || ""}
@@ -33,10 +33,12 @@ function App() {
               <Title1 className="text-xl font-bold">
                 {t("home.title.name")}
               </Title1>
-            </Link>
+            </Link> */}
             <SideBar width={width} />
           </header>
-          <Outlet />
+          <div className="mainContent">
+            <Outlet />
+          </div>
           <BottomBar width={width} />
         </div>
       </I18nextProvider>
