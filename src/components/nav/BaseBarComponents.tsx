@@ -15,7 +15,7 @@ import { NavItem } from "../../models/nav";
 import { fluentStyles } from "../../styles/fluent";
 import { SettingsDialog } from "../settings/SettingsDialog";
 
-export function BaseBarComponents({ width }: { width: number }) {
+export function BaseBarComponents({ width, sideNavOpen }: { width: number; sideNavOpen: boolean }) {
   const fluentStyle = fluentStyles();
 
   const navItems: NavItem[] = useMemo(() => {
@@ -55,7 +55,7 @@ export function BaseBarComponents({ width }: { width: number }) {
     }
   }, [width]);
 
-  const BaseBarComponents = useCallback(() => {
+  const RenderBaseBar = useCallback(() => {
     const baseBarComponents = navItems.map((item) => {
       return item.path ? (
         <li key={t(item.label)}>
@@ -73,20 +73,23 @@ export function BaseBarComponents({ width }: { width: number }) {
                 size={isLargerThanDefaultPhone() ? "medium" : "large"}
                 title={t(item.label) ?? item.label}
               >
-                {isLargerThanDefaultPhone() && <Text>{t(item.label)}</Text>}
+                {/* Show label only on larger phones or when side nav is open on wide screens */}
+                {isLargerThanDefaultPhone() && (width < 800 || sideNavOpen) && (
+                  <Text>{t(item.label)}</Text>
+                )}
               </Button>
             )}
           </NavLink>
         </li>
       ) : (
         <li key={t(item.label)}>
-          <SettingsDialog width={width} item={item} />
+          <SettingsDialog width={width} item={item} sideNavOpen={sideNavOpen}/>
         </li>
       );
     });
 
     return <ul>{baseBarComponents}</ul>;
-  }, [width]);
+  }, [width, navItems, sideNavOpen, getClassName, isLargerThanDefaultPhone]);
 
-  return <BaseBarComponents />;
+  return (<RenderBaseBar />);
 }
