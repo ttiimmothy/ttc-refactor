@@ -1,11 +1,12 @@
 import { Badge, Title2 } from "@fluentui/react-components";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useCallback } from "react";
 
 import { fluentStyles } from "../../styles/fluent";
 
 export function Countdown(props: { minute: number }) {
   const fluentStyle = fluentStyles();
+  const { t } = useTranslation();
 
   const ArrivingBadge = useCallback(() => {
     return props.minute <= 3 ? (

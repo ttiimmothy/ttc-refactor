@@ -1,4 +1,4 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -6,6 +6,7 @@ import EtaCardContainer from "../components/etaCard/EtaCardContainer";
 import { stopsDataEndpoint } from "../constants/dataEndpoints";
 
 export default function StopPrediction() {
+  const { t } = useTranslation();
   const params = useParams();
   const stopId = params.stopId ?? "";
   const [dataUrl, setDataUrl] = useState("");

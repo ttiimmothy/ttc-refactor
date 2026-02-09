@@ -7,7 +7,7 @@ import {
   Settings20Regular,
   Settings24Filled,
 } from "@fluentui/react-icons";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useCallback, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -17,6 +17,7 @@ import { SettingsDialog } from "../settings/SettingsDialog";
 
 export function BaseBarComponents({ width, sideNavOpen }: { width: number; sideNavOpen: boolean }) {
   const fluentStyle = fluentStyles();
+  const { t } = useTranslation();
 
   const navItems: NavItem[] = useMemo(() => {
     return [

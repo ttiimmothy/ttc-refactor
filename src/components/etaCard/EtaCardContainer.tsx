@@ -1,5 +1,5 @@
 import { Text, Title1 } from "@fluentui/react-components";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useCallback, useEffect, useState } from "react";
 
 import { AbortError } from "../../constants/errors";
@@ -15,6 +15,7 @@ import { extractEtaDataFromJson } from "../utils/jsonParser";
 import { EtaCard } from "./EtaCard";
 
 export default function EtaCardContainer(props: EtaContainerParams) {
+  const { t } = useTranslation();
   const [processedEtaList, setProcessedEtaList] = useState<BranchEta[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [toggleFetch, setToggleFetch] = useState(false);

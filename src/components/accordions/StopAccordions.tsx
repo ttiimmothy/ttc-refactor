@@ -6,7 +6,7 @@ import {
   Button,
 } from "@fluentui/react-components";
 import { VehicleBus16Filled } from "@fluentui/react-icons";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useCallback } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,7 @@ import { removeSpecialChars } from "../utils/routeName";
 
 export function StopAccordions(props: StopAccordionsParams) {
   const fluentStyle = fluentStyles();
+  const { t } = useTranslation();
 
   const Stops = useCallback(() => {
     const stops = props.processedStopList.map((stop) => {

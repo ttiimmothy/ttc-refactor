@@ -1,5 +1,4 @@
 import { Title1 } from "@fluentui/react-components";
-import { t } from "i18next";
 import { useEffect, useState } from "react";
 import { I18nextProvider, useTranslation } from "react-i18next";
 import { Link, Outlet } from "react-router-dom";

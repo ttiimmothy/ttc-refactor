@@ -1,11 +1,12 @@
 import { Accordion, Title1 } from "@fluentui/react-components";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { RouteInfo } from "../components/RouteInfo";
 
 export default function Line() {
+  const { t } = useTranslation();
   const params = useParams();
 
   const lineNum = parseInt(`${params.lineId}`);
