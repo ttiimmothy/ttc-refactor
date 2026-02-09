@@ -36,6 +36,7 @@ export function SettingsDialog(props: { width: number; item: NavItem; sideNavOpe
       SettingOptions.darkMode
     )?.value ?? false
   );
+  const [open, setOpen] = useState(false);
 
   const darkModeChange = useCallback(
     (ev: ChangeEvent<HTMLInputElement>, data: SwitchOnChangeData) => {
@@ -46,8 +47,9 @@ export function SettingsDialog(props: { width: number; item: NavItem; sideNavOpe
           value: data.checked,
         })
       );
+      setOpen(false);
     },
-    [isDarkMode]
+    [dispatch]
   );
 
   const isLargerThanDefaultPhone = useCallback(() => {
@@ -79,7 +81,7 @@ export function SettingsDialog(props: { width: number; item: NavItem; sideNavOpe
 
   return (
     <div>
-      <Dialog>
+      <Dialog open={open} onOpenChange={(_, data) => setOpen(data.open)}>
         <DialogTrigger>
           <Button
             className={getNavButtonClassName()}
